@@ -1,0 +1,79 @@
+
+reff :  https://raw.githubusercontent.com/Yenthe666/InstallScript/9.0/odoo_install.sh
+
+Requirements:
+Ubuntu 16 server or any ubuntu os
+
+
+
+sudo apt-get update
+
+sudo apt-get install python-dateutil python-docutils python-feedparser python-jinja2 python-ldap python-libxslt1 python-lxml python-mako python-mock python-openid python-psycopg2 python-psutil python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi poppler-utils python-pip python-pypdf python-passlib python-decorator gcc python-dev mc bzr python-setuptools python-markupsafe python-reportlab-accel python-zsi python-yaml python-argparse python-openssl python-egenix-mxdatetime python-usb python-serial lptools make python-pydot python-psutil python-paramiko poppler-utils python-pdftools antiword python-requests python-xlsxwriter python-suds python-psycogreen python-ofxparse python-gevent python-pymssql
+
+sudo pip install --upgrade pip
+sudo pip install pysftp
+
+
+
+sudo apt-get install postgresql-9.5
+
+sudo su postgres
+
+createuser --createdb --username postgres --no-createrole --pwprompt odoo
+
+odoo@123
+odoo@123
+
+exit
+
+sudo vim /etc/postgresql/9.5/main/pg_hba.conf
+
+
+add this to # IPv4 local connections:
+
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            md5
+host    all             all             0.0.0.0/0               md5
+
+
+sudo vim /etc/postgresql/9.5/main/postgresql.conf
+
+listen_address='*'
+
+
+sudo /etc/init.d/postgresql restart
+
+
+sudo apt-get install -y npm
+
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+sudo npm install -g less less-plugin-clean-css
+
+sudo wget http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
+
+sudo dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb
+
+sudo cp /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
+
+sudo cp /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
+
+for pycharm install
+---------------------
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt-get update
+sudo apt-get install ubuntu-make
+umake ide pycharm
+umake -r ide pycharm
+
+for sublime install
+-------------------
+
+
+
+
+
+
+
+
+
