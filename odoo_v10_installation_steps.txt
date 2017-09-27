@@ -1,5 +1,11 @@
 
-reff :  https://raw.githubusercontent.com/Yenthe666/InstallScript/9.0/odoo_install.sh
+reff :  
+
+https://raw.githubusercontent.com/Yenthe666/InstallScript/9.0/odoo_install.sh
+
+https://www.getopenerp.com/install-odoo-10-on-ubuntu-16-04/
+
+https://www.getopenerp.com/wkhtmltopdf-for-odoo8/
 
 Requirements:
 Ubuntu 16 server or any ubuntu os
@@ -49,6 +55,10 @@ sudo apt-get install -y npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 sudo npm install -g less less-plugin-clean-css
+
+Refference Wkhtmltox:
+--------------
+sudo wget https://downloads.wkhtmltopdf.org/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
 
 sudo wget http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
 (or)
