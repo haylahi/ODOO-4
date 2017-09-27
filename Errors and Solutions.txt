@@ -1,0 +1,6 @@
+Errors and Solutions
+
+Error    1:
+  AttributeError: 'module' object has no attribute 'SSL_ST_INIT' while run odoo
+Solution 1:
+  sudo pip install pyOpenSSL==16.2.0
