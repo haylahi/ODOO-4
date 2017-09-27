@@ -1,6 +1,8 @@
 setup static ip for ubuntu server
 -----------------------------------
-ref: https://askubuntu.com/questions/766131/set-static-ip-ubuntu-16-04
+ref: 
+    https://askubuntu.com/questions/766131/set-static-ip-ubuntu-16-04
+    https://www.swiftstack.com/docs/install/configure_networking.html
 
 STEPS : 
 
