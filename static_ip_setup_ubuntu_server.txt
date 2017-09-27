@@ -1,0 +1,22 @@
+setup static ip for ubuntu server
+-----------------------------------
+ref: https://askubuntu.com/questions/766131/set-static-ip-ubuntu-16-04
+
+STEPS : 
+
+sudo vim /etc/network/interfaces
+
+# The primary network interface
+auto ens33
+iface ens33 inet dhcp
+    address 192.168.1.123
+    netmask 255.255.255.0
+    network 192.168.1.0
+    broadcast 192.168.1.255
+    gateway 192.168.1.1
+    dns-nameservers 8.8.8.8
+
+
+sudo ifdown ens33 && sudo ifup ens33
+
+sudo reboot
