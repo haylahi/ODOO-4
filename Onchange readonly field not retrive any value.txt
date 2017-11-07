@@ -1,9 +1,12 @@
-Onchange readonly field not retrive any value openerp 7
+Onchange readonly field not retrive any value openerp 7 & odoo
 
 Ref Link :  
 
-
+openerp:
 File: /web/static/src/js/view_form.js
+
+odoo 8,9 10 and 11:
+File: /web/static/src/js/views/form_view.js
 
 
 } else if (f.name !== 'id' && (!self.datarecord.id || f._dirty_flag)) {
