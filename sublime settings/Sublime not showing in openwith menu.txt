@@ -1,0 +1,14 @@
+In ubuntu --> Sublime Text Not showing in open with menu
+-------------
+
+Step 1:
+
+	Open Terminal( CTRL + ALT + T )
+
+Setp 2:
+
+	cp /usr/share/applications/sublime_text.desktop ~/.local/share/applications/sublime_text.desktop
+
+Step 3:
+
+	sudo update-desktop-database
