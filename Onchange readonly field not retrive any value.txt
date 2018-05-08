@@ -1,6 +1,6 @@
 Onchange readonly field not retrive any value openerp 7 & odoo
 
-Ref Link :  
+Ref Link :  https://www.odoo.com/forum/help-1/question/how-to-store-field-readonly-in-database-with-onchange-method-66603
 
 openerp:
 File: /web/static/src/js/view_form.js
@@ -26,3 +26,28 @@ File: /web/static/src/js/views/form_view.js
     }
 }
 if (form_invalid) {
+
+--Extra---
+ref: https://www.odoo.com/forum/help-1/question/how-to-store-field-readonly-in-database-with-onchange-method-66603
+
+addons/web/static/js/view_form.js:
+
+In view_form.js:
+
+in line: 840:
+
+if (!f.get("readonly")) {
+
+     values[f.name] = f.get_value(); }
+
+else { readonly_values[f.name] = f.get_value(); }
+
+     values[f.name] = f.get_value(); 
+
+if (f.get("readonly")) 
+
+   readonly_values[f.name] = f.get_value();
+
+}
+
+}
