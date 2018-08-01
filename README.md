@@ -6,3 +6,7 @@ Ascii Characters Removal in python:
 Ref : https://stackoverflow.com/questions/9942594/unicodeencodeerror-ascii-codec-cant-encode-character-u-xa0-in-position-20/9942822
 
 yourstring = yourstring.encode('ascii', 'ignore').decode('ascii')
+
+How to Install Wkhtmltopdf 12.4 with patched Qt?
+------------------------------------------------
+https://gist.github.com/kai101/99d57462f2459245d28b4f5ea51aa7d0
