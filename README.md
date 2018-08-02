@@ -1,6 +1,11 @@
 # odoo
 Odoo Refferences
 
+Odoo 11 installation
+--------------------
+https://webkul.com/blog/install-odoo11-on-ubuntu/
+https://www.getopenerp.com/install-odoo-11-on-ubuntu-16-04/
+
 Create ODOO user in postgres:
 -------------------------------
 sudo su postgres
