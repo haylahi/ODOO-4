@@ -1,4 +1,8 @@
 --Creating a readonly user for accessing tables(No-write permission)
+--sudo su postgres
+
+--psql
+
 CREATE ROLE readonlyuser WITH LOGIN PASSWORD 'readonlyuser' NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION VALID UNTIL 'infinity';
 
 --Assign permission to this read only user:
