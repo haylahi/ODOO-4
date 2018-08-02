@@ -14,6 +14,13 @@ sudo apt-add-repository universe
 sudo apt-get update
 sudo apt-get install python-pip
 
+Upgrade or install postgresql latest(9.6 or above)
+--------------------------------------------------
+sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main"
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install postgresql-9.6
+
 
 Ascii Characters Removal in python:
 -----------------------------------
