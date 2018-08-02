@@ -7,6 +7,13 @@ sudo su postgres
 
 createuser --createdb --username postgres --no-createrole --pwprompt odoo
 
+Unable to find python-pip -Fix
+-------------------------
+sudo apt-get install software-properties-common
+sudo apt-add-repository universe
+sudo apt-get update
+sudo apt-get install python-pip
+
 
 Ascii Characters Removal in python:
 -----------------------------------
