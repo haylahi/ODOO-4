@@ -1,6 +1,10 @@
 # odoo
 Odoo Refferences
 
+Odoo Service Enable
+-------------------
+https://www.linode.com/docs/websites/cms/install-odoo-10-on-ubuntu-16-04/
+
 Odoo 11 installation
 --------------------
 https://webkul.com/blog/install-odoo11-on-ubuntu/
