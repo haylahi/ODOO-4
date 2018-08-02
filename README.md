@@ -4,6 +4,7 @@ Odoo Refferences
 Create ODOO user in postgres:
 -------------------------------
 sudo su postgres
+
 createuser --createdb --username postgres --no-createrole --pwprompt odoo
 
 
