@@ -46,4 +46,29 @@ yourstring = yourstring.encode('ascii', 'ignore').decode('ascii')
 
 How to Install Wkhtmltopdf 12.4 with patched Qt?
 ------------------------------------------------
-https://gist.github.com/kai101/99d57462f2459245d28b4f5ea51aa7d0
+Ref: https://gist.github.com/kai101/99d57462f2459245d28b4f5ea51aa7d0
+
+    Current version of apt-get wkhtmltopdf does not come with Qt patch. There are some issue going with both Qt patched and non-patched.
+    Most common use case is compatible with the patched Qt.
+
+    ```
+    wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+    tar xvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz 
+    sudo mv wkhtmltox/bin/wkhtmlto* /usr/local/bin 
+    sudo apt-get install -y openssl libssl-dev libxrender-dev libx11-dev libxext-dev libfontconfig1-dev libfreetype6-dev fontconfig
+    ```
+
+    ## Fixing Wkhtmltopdf SSL error ##
+    ### ubuntu 17.10 ###
+    ```
+    sudo apt-get install libssl-dev=1.0.2g-1ubuntu13.3 openssl=1.0.2g-1ubuntu13.3
+    ```
+    ### ubuntu 17.04 ###
+    ```
+    # end of life, forget   it.
+    ```
+
+    ### ubuntu 16.04 ###
+    ```
+    sudo apt-get install libssl1.0.0=1.0.2g-1ubuntu4.10 libssl-dev=1.0.2g-1ubuntu4.10 openssl=1.0.2g-1ubuntu4.10
+    ```
