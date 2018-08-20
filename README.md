@@ -72,3 +72,8 @@ Ref: https://gist.github.com/kai101/99d57462f2459245d28b4f5ea51aa7d0
     ```
     sudo apt-get install libssl1.0.0=1.0.2g-1ubuntu4.10 libssl-dev=1.0.2g-1ubuntu4.10 openssl=1.0.2g-1ubuntu4.10
     ```
+    
+ What are the ports open in server?
+ ----------------------------------
+    
+    sudo netstat -ltpn
