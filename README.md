@@ -77,3 +77,7 @@ Ref: https://gist.github.com/kai101/99d57462f2459245d28b4f5ea51aa7d0
  ----------------------------------
     
     sudo netstat -ltpn
+ 
+Install SSL with NGINX ubuntu?
+-----------------------------
+    https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
