@@ -81,3 +81,22 @@ Ref: https://gist.github.com/kai101/99d57462f2459245d28b4f5ea51aa7d0
 Install SSL with NGINX ubuntu?
 -----------------------------
     https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
+
+Postgres Server Error, connection refused error:
+------------------------------------------------
+    Error:
+    OperationalError: could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+    ubuntu@ip-123-34-54-321:~$ tail /var/log/postgresql/postgresql-9.5-main.log
+    2018-08-27 01:42:33 UTC [7680-1] FATAL:  could not remove old lock file "postmaster.pid": Permission denied
+    2018-08-27 01:42:33 UTC [7680-2] HINT:  The file seems accidentally left over, but it could not be removed. Please              remove the file by hand and try again.
+    
+    Solution:
+    We need to change permission of postgres main folder:
+    Before : 
+        dr-x------ 19 postgres postgres 4096 Aug 21 09:40 /var/lib/postgresql/9.5/main
+    After:
+        sudo chmod -R 700 /var/lib/postgresql/9.5/main/
+        drwx------ 19 postgres postgres 4096 Aug 21 09:40 /var/lib/postgresql/9.5/main
