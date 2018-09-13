@@ -100,3 +100,9 @@ Postgres Server Error, connection refused error:
     After:
         sudo chmod -R 700 /var/lib/postgresql/9.5/main/
         drwx------ 19 postgres postgres 4096 Aug 21 09:40 /var/lib/postgresql/9.5/main
+
+PostgreSQL - Date extract -Month start date and Month end date
+------------------------------------------------------------
+	SELECT date_trunc('MONTH',now())::DATE as month_start_date,(date_trunc('MONTH', now()) + INTERVAL '1 MONTH - 1 day')::DATE as month_end_date;
+	
+	
