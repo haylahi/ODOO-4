@@ -104,5 +104,9 @@ Postgres Server Error, connection refused error:
 PostgreSQL - Date extract -Month start date and Month end date
 ------------------------------------------------------------
 	SELECT date_trunc('MONTH',now())::DATE as month_start_date,(date_trunc('MONTH', now()) + INTERVAL '1 MONTH - 1 day')::DATE as month_end_date;
+
+PostgreSQL - Date extract -YTD start date and Month end date(2018-07-01,2019-06-30)
+------------------------------------------------------------
+	select concat(date_part('YEAR', now()),'-07-01'),concat(date_part('YEAR', now())+1, '-06-30');
 	
 	
