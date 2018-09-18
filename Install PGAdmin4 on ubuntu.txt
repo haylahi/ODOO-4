@@ -1,0 +1,23 @@
+Install PGAdmin4 on ubuntu
+-----------------------------------------
+Ref: https://wiki.postgresql.org/wiki/Apt
+
+
+sudo apt-get install wget ca-certificates
+
+sudo wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+sudo nano /etc/apt/sources.list.d/pgdg.list
+  edit and add  line,
+    deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main
+
+
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+
+sudo apt-get update && sudo apt-get upgrade
+
+sudo apt-get install postgresql-10 pgadmin4
+
+
+  
+  
