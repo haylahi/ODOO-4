@@ -1,0 +1,16 @@
+FilePath = /addons/account/static/src/js/account_reconciliation_widgets.js - line : 1601
+
+Original:
+---------
+showMoreButtonClickHandler: function() {
+    this.displayReconciliations(this.num_reconciliations_fetched_in_batch);
+},
+
+
+Replaced:
+---------
+showMoreButtonClickHandler: function() {
+    // Saasmate - Click Show more, shows  all remaining items
+    // this.displayReconciliations(this.num_reconciliations_fetched_in_batch);
+    this.displayReconciliations(this.lines.length);
+},
