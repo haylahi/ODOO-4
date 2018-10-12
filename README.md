@@ -109,4 +109,8 @@ PostgreSQL - Date extract -YTD start date and Month end date(2018-07-01,2019-06-
 ------------------------------------------------------------
 	select concat(date_part('YEAR', now()),'-07-01'),concat(date_part('YEAR', now())+1, '-06-30');
 	
-	
+ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:726) - In xmlrpc
+-------------------------------------------------------------------------------------
+	#Add Following line at top of the program
+	import ssl
+	ssl._create_default_https_context = ssl._create_unverified_context
