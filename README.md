@@ -114,3 +114,13 @@ ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c
 	#Add Following line at top of the program
 	import ssl
 	ssl._create_default_https_context = ssl._create_unverified_context
+
+PostgreSQL - change timezone convertion example
+-----------------------------------------------
+ref:https://popsql.io/learn-sql/postgresql/how-to-convert-utc-to-local-time-zone-in-postgresql/
+	select 
+	sum(sp.line_count)
+	from stock_picking sp
+	where 
+		(sp.date_done at time zone 'utc' at time zone 'AEDT') >= TO_TIMESTAMP(now()::DATE || ' 00:00:00','YYYY-MM-DD HH24:MI:SS')
+		and (sp.date_done at time zone 'utc' at time zone 'AEDT') <= TO_TIMESTAMP(now()::DATE || ' 23:59:59','YYYY-MM-DD HH24:MI:SS')
