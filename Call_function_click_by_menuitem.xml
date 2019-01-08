@@ -1,0 +1,12 @@
+<!-- Call function click by menuitem -->
+    <record id="action_open_plreport" model="ir.actions.server">
+            <field name="name">Purchase Order Line Report</field>
+            <field name="model_id" ref="model_purchase_report_wizard"/>
+            <field name="state">code</field>
+            <field name="code">
+report_id = env["purchase.report.wizard"].create({})
+action = report_id.get_report_data()
+            </field>
+    </record>
+
+    <menuitem id="menu_purchase_order_line_saasmate" name="Purchase Order Line Report" sequence="7" action="action_open_plreport" parent="purchase.menu_procurement_management"/>
