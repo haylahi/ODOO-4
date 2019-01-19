@@ -1,3 +1,7 @@
+PostgreSQL Database Manual backup script for linux
+-----------------------------------------------------
+
+		sudo su postgres -c "pg_dump db_name | gzip -c > /home/DBBACKUP/newtech_$(date +"%Y_%m_%d_%H_%M_%S").dump.out.gz"
 
 PostgreSQL Database Automatic backup script for linux
 -----------------------------------------------------
