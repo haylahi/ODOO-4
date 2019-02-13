@@ -28,6 +28,9 @@ sudo apt-get install python-pip
 
 Upgrade or install postgresql latest(9.6 or above)
 --------------------------------------------------
+
+Link: https://stackoverflow.com/questions/46687645/upgrade-postgresql-from-9-6-to-10-0-on-ubuntu-16-10
+
 sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main"
 
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
